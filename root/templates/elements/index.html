@@ -1,0 +1,165 @@
+{% extends '_layouts/base.html' %}
+
+{% block content %}
+  {% load static %}
+<link rel="stylesheet" href="{% static 'css/style_gallery.css' %}">
+
+  {% include '_fragments/Banner Area End.html' %}
+
+    <div class="container_gallery">
+
+        <h1 class="name_gallery"></h1>
+
+        <div class="img-container_gallery">
+            <div class="img">
+                <img src="{% static 'images/elements/g1.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g2.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g3.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g4.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g5.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g6.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g7.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g8.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g9.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g10.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g11.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g12.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g13.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g14.jpg' %}" alt="">
+            </div>
+            <div class="img">
+                <img src="{% static 'images/elements/g15.jpg' %}" alt="">
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="pop-up">
+            <span>&times;</span>
+            <img src="{% static 'images/elements/g1.jpg' %}" alt="">
+        </div>
+
+
+    </div>
+<script >
+    document.querySelectorAll('.img-container_gallery img').forEach(img => {
+        img.onclick = () => {
+            document.querySelector('.pop-up').style.display = 'block';
+            document.querySelector('.pop-up img').src = img.getAttribute('src');
+        }
+    });
+
+    document.querySelector('.pop-up span').onclick = () => {
+        document.querySelector('.pop-up').style.display = 'none';
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <div class="section-top-border">-->
+<!--    <div class="whole-wrap">-->
+<!--    <div class="container">-->
+<!--        <h3 class="title_color">Image Gallery</h3>-->
+<!--                <div class="row gallery-item"  >-->
+<!--                    <div class="col-md-4" >-->
+<!--                        <a style="width: height: 1000px;" href="{% static  'images/elements/g1.jpg' %}" class="img-gal"><div class="single-gallery-image" style="background: url({% static 'images/elements/g1.jpg' %});"></div></a>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                        <a href="{% static  'images/elements/g2.jpg' %}" class="img-gal"><div class="single-gallery-image" style="background: url({% static 'images/elements/g2.jpg' %});"></div></a>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                        <a href="{% static  'images/elements/g3.jpg' %}" class="img-gal"><div class="single-gallery-image" style="background: url({% static 'images/elements/g3.jpg' %});"></div></a>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6">-->
+<!--                        <a href="{% static  'images/elements/g4.jpg' %}" class="img-gal"><div class="single-gallery-image" style="background: url({% static 'images/elements/g4.jpg' %});"></div></a>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6">-->
+<!--                        <a href="{% static  'images/elements/g5.jpg' %}" class="img-gal"><div class="single-gallery-image" style="background: url({% static 'images/elements/g5.jpg' %});"></div></a>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                        <a href="{% static  'images/elements/g6.jpg' %}" class="img-gal"><div class="single-gallery-image" style="background: url({% static 'images/elements/g6.jpg' %});"></div></a>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                        <a href="{% static  'images/elements/g7.jpg' %}" class="img-gal"><div class="single-gallery-image" style="background: url({% static 'images/elements/g7.jpg' %});"></div></a>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                        <a href="{% static  'images/elements/g8.jpg' %}" class="img-gal"><div class="single-gallery-image" style="background: url({% static 'images/elements/g8.jpg' %});"></div></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--    </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--      <br>-->
+<!--      <br>-->
+
+<!--    <nav class="blog-pagination justify-content-center d-flex">-->
+<!--                            <ul class="pagination">-->
+<!--                                <li class="page-item">-->
+<!--                                    <a href="#" class="page-link" aria-label="Previous">-->
+<!--                                        <span aria-hidden="true">-->
+<!--                                            <span class="fa fa-angle-left"></span>-->
+<!--                                        </span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li class="page-item"><a href="#" class="page-link">01</a></li>-->
+<!--                                <li class="page-item active"><a href="#" class="page-link">02</a></li>-->
+<!--                                <li class="page-item"><a href="#" class="page-link">03</a></li>-->
+<!--                                <li class="page-item"><a href="#" class="page-link">04</a></li>-->
+<!--                                <li class="page-item"><a href="#" class="page-link">09</a></li>-->
+<!--                                <li class="page-item">-->
+<!--                                    <a href="#" class="page-link" aria-label="Next">-->
+<!--                                        <span aria-hidden="true">-->
+<!--                                            <span class="fa fa-angle-right"></span>-->
+<!--                                        </span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </nav>-->
+{% endblock content %}
+
+
+
+

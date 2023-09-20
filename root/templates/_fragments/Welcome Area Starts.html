@@ -1,0 +1,22 @@
+{% load static %}
+<section class="welcome-area section-padding3">
+        <div class="container" style="height: 340px;">
+            <div class="row">
+                <div class="col-lg-5 align-self-center">
+                    <div class="welcome-img">
+                        <img src="{% static 'images/welcome.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="welcome-text mt-5 mt-lg-0">
+                        <h2 style="color: #006400;" >Ласкаво просимо <br> до кабінету <br> Enigma-Dent </h2>
+                        <p class="pt-3">Ми готові надати вам професійну допомогу. Будьте впевнені, що ми зробимо все можливе, щоб зробити ваше перебування комфортним і забезпечити якісне стоматологічне обслуговування.</p>
+                        <p> З нетерпінням чекаємо вашого візиту і можливості допомогти вам здобути здорову посмішку!</p>
+                        <a href="{% url 'create' %}" class="template-btn mt-3">Записатись</a>
+                        <a href="response_create" class="template-btn mt-3">Залишити відгук</a>
+                        <a href="https://g.page/r/CTQFYWSSJqerEBE/review" class="template-btn mt-3">Залишити відгук на Google</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

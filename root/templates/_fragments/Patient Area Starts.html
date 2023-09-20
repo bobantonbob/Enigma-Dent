@@ -1,0 +1,89 @@
+{% load static %}
+<section class="patient-area section-padding" >
+        <div class="container" >
+            <div class="row" >
+                <div class="col-lg-6 offset-lg-3" >
+                    <div class="section-top text-center">
+                        <h2>🦷 Відгуки 🦷</h2>
+                        <h2>від наших пацієнтів</h2>
+                        <p>Ми дуже цінуємо та дбаємо кожного пацієнта. <br> Дякуємо, що довіряєте нам!</p>
+                    </div>
+                </div>
+                <div class="comments-area" >
+                    <h3 style="color: #006400;">На  сайті   " {{ rows_count }} " відгуків</h3><br>
+                    <div class="comment-list">
+                        <div class="single-comment justify-content-between d-flex">
+                            <div class="user justify-content-between d-flex" >
+                                {% for post in page_obj %}
+                                <div class="thumb">
+                                    <table>
+                                        <tr>
+                                            <td rowspan="3" class="thumb"><img src="/media/{{ post.image }}" width="65" height="65"></td>
+                                            <th>{{ post.name }}</th>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="date">{{ post.timestamp }}</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="comment">{{ post.response }}</p></td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <hr style="width: 1020px;">
+                                    <br>
+
+                                {% endfor %}
+                                    <div class="pagination" style="margin-top: 20px">
+                                    <span class="step-links">
+                                      {% if page_obj.has_previous %}
+                                        <a href="?page=1">&laquo; Початок</a>
+
+                                        <a href="?page={{ page_obj.previous_page_number }}">Попередня</a>
+                                      {% endif %}
+
+                                      <span class="current">
+                                        Сторінка {{ page_obj.number }} з {{ page_obj.paginator.num_pages }}
+                                      </span>
+
+                                      {% if page_obj.has_next %}
+                                        <a href="?page={{ page_obj.next_page_number }}">Наступна</a>
+
+                                        <a href="?page={{ page_obj.paginator.num_pages}}">Кінець &raquo;</a>
+                                      {% endif %}
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+  <div class="elfsight-app-e5b83d3e-fb6b-481e-b0d3-562a2d3b7696"></div>
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        </div>
+</section>
+
+
+<style>
+    .response {
+        width: 100%;
+        border: 3px solid silver;
+        margin-top: 5px;
+    }
+    .response td,
+    .response th {
+        border: 1px solid silver;
+        padding: 10px;
+
+    }
+    .response th {
+        color: teal;
+    }
+    thead {
+        padding: 20px 0px;
+    }
+
+  </style>
+

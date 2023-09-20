@@ -1,0 +1,29 @@
+
+{% load static %}
+
+<div class="whole-wrap">
+    <div class="container">
+        <div class="section-top-border">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <h3 class="mb-30 title_color">Ваш відгук про нас</h3>
+                        <form method="post" action="response_create" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{ form.name }}<br>
+                            {{ form.email }}<br>
+                            {{ form.response }}<br>
+                            {{ form.image }}<br>
+                            <br>
+                            <p>
+                                <input type="submit" value="Відправити" class='genric-btn success-border circle'>
+                                <input type="reset" value="Очистити" class='genric-btn danger-border circle'>
+                                <a class="genric-btn info-border circle" href="/about" role="button">До відгуків</a>
+                            </p>
+                        </form>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
