@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Enigma-Dent - {{ title }}</title>
-    <link rel="shortcut icon" href="{% static 'images/logo/favicon.png' %}" type="image/x-icon">
-    <link rel="stylesheet" href="{% static 'css/animate-3.7.0.css' %}">
-    <link rel="stylesheet" href="{% static 'css/font-awesome-4.7.0.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap-4.1.3.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/owl-carousel.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/jquery.datetimepicker.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    {% include '_fragments/header.html' %}
-    {% block content %}{% endblock %}
-    {% include '_fragments/footer.html' %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Enigma-Dent - {{ title }}</title>
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <link rel="shortcut icon" href="{% static 'images/logo/favicon.png' %}" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'css/animate-3.7.0.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome-4.7.0.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-4.1.3.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl-carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/jquery.datetimepicker.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div class="page">
+            {% include '_fragments/header.html' %}
+            {% block content %}{% endblock %}
+            {% include '_fragments/footer.html' %}
+        </div>
+        <!-- Javascript -->
+        <script src="{% static 'js/vendor/jquery-2.2.4.min.js' %} "></script>
+        <script src="{% static 'js/vendor/bootstrap-4.1.3.min.js' %} "></script>
+        <script src="{% static 'js/vendor/wow.min.js' %} "></script>
+        <script src="{% static 'js/vendor/owl-carousel.min.js' %} "></script>
+        <script src="{% static 'js/vendor/jquery.datetimepicker.full.min.js' %} "></script>
+        <script src="{% static 'js/vendor/jquery.nice-select.min.js' %} "></script>
+        <script src="{% static 'js/vendor/superfish.min.js' %} "></script>
+        <script src="{% static 'js/main.js' %} "></script>
 
-    <!-- Javascript -->
-    <script src="{% static 'js/vendor/jquery-2.2.4.min.js' %} "></script>
-	<script src="{% static 'js/vendor/bootstrap-4.1.3.min.js' %} "></script>
-    <script src="{% static 'js/vendor/wow.min.js' %} "></script>
-    <script src="{% static 'js/vendor/owl-carousel.min.js' %} "></script>
-    <script src="{% static 'js/vendor/jquery.datetimepicker.full.min.js' %} "></script>
-    <script src="{% static 'js/vendor/jquery.nice-select.min.js' %} "></script>
-    <script src="{% static 'js/vendor/superfish.min.js' %} "></script>
-    <script src="{% static 'js/main.js' %} "></script>
+        <style>
+          .link_header {
+            color: #006400; /* Колір посилання за замовчуванням */
+            text-decoration: none; /* Відключає підкреслення посилання */
+          }
 
-<style>
-  .link_header {
-    color: #006400; /* Колір посилання за замовчуванням */
-    text-decoration: none; /* Відключає підкреслення посилання */
-  }
+          .link_header:hover {
+            color: #32CD32; /* Колір посилання при наведенні курсору */
+            text-decoration: underline; /* Підкреслює посилання при наведенні курсору */
+          }
+        </style>
 
-  .link_header:hover {
-    color: #32CD32; /* Колір посилання при наведенні курсору */
-    text-decoration: underline; /* Підкреслює посилання при наведенні курсору */
-  }
-</style>
-
-</body>
+    </body>
 </html>
