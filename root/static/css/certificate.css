@@ -1,43 +1,35 @@
-/* Гнучкі контейнери для адаптивності */
-.img-container_gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px; /* Загальний відступ для компенсації margin у .img */
+.container_certificate {
+  background-color: #BCB7C1; /* Додаємо фон галереї */
+  padding: 20px; /* Додаємо відступи */
 }
 
-.img {
-  flex: 0 0 calc(33.33% - 30px); /* 33.33% ширини екрану з відступами 30px між елементами */
-  box-sizing: border-box;
-  margin: 15px; /* Зовнішній відступ */
-  overflow: hidden; /* Заборона виходження за межі контейнера */
+.materialboxed {
+  border-radius: 20px; /* Додаємо закруглення для зображень */
+  margin-bottom: 30px; /* Додаємо вертикальний відступ між зображеннями */
+  transition: transform 0.3s ease, z-index 0s 0.3s;
 }
 
-.img img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.2s ease-in-out; /* Додавання плавного переходу при наведенні */
+.row.cer {
+  margin-bottom: 30px; /* Збільшуємо відступ між рядками */
 }
 
-.img:hover img {
-  transform: scale(1.1); /* Збільшення зображення при наведенні */
+@media only screen and (max-width: 600px) {
+  .col.s4 {
+    flex: 0 0 100%; /* При зменшенні екрану, зробимо кожен елемент на повну ширину */
+    box-sizing: border-box;
+    padding: 10px;
+  }
 }
 
-/* Стилі для модального вікна та його зображення */
-.pop-up {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #3498db; /* Голубий фон */
-  align-items: center;
-  justify-content: center;
+/* Додаємо анімацію для зображень при наведенні */
+.materialboxed:hover {
+  transform: scale(1.1); /* Збільшуємо зображення на 10% при наведенні */
+  transition: transform 0.3s ease; /* Додаємо плавний перехід на збільшення */
+  z-index: 1;
 }
 
-.pop-up-img {
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-  display: block;
+/* Оточення зображення сірим коліром при виборі */
+.materialboxed:focus {
+  outline: 4px solid #ccc;
+  outline-offset: 10px;
 }

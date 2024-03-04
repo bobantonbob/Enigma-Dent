@@ -62,7 +62,7 @@ header, footer {
 .container_gallery {
     width: 100%;
     min-height: 100vh; /* Мінімальна висота на всю висоту екрану */
-    background: #262626;
+    background: #BCB7C1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
