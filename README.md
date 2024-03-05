@@ -1,19 +1,19 @@
-# 🦷 Стоматологічний Кабінет |  🏥
+# 🦷 Dental Clinic Website | *** 🏥
 
-В рамках цього проєкту з розробки веб-сайту для стоматологічного кабінету вдалося створити цифровий інструментарій, який сприяє зручній взаємодії з пацієнтами та покращує ефективність роботи персоналу. Протягом тижня вдалося реалізувати широкий спектр функцій.
+Within the framework of this project to develop a website for a dental clinic, a digital toolkit has been successfully created, enhancing convenient interaction with patients and improving staff efficiency. A wide range of features was implemented in just one week.
 
-## Основні Досягнення та Можливості:
+## Key Achievements and Features:
 
-- 🦷 **Розклад та Запис на Прийом:**
-  Створено зручний графік прийому та систему електронних записів, що дозволяє пацієнтам легко планувати візити.
+- 🦷 **Schedule and Appointment Booking:**
+  A user-friendly appointment schedule and an electronic booking system have been implemented, allowing patients to easily plan their visits.
 
-- 👥 **Контактна Інформація:**
-  Забезпечено зручний зв'язок з пацієнтами через електронну пошту та телефонний номер.
+- 👥 **Contact Information:**
+  Convenient communication with patients is ensured through email and a contact phone number.
 
-- 📋 **Медична Інформація:**
-  Медична інформація та історії відвідувань пацієнтів зберігаються в безпечному та конфіденційному середовищі.
+- 📋 **Medical Information:**
+  Patient medical information and visit histories are stored in a secure and confidential environment.
 
-- 💊 **Лікування та Процедури:**
-  Пацієнти можуть знайти детальну інформацію про різні лікування та процедури, що надаються, сприяючи обізнаності та вибору.
+- 💊 **Treatments and Procedures:**
+  Patients can find detailed information about various treatments and procedures offered, promoting awareness and informed decision-making.
 
-Цей веб-сайт вдалося впровадити за короткий термін, а я продовжую забезпечувати підтримку та професійну допомогу. Пишаюся своїм внеском у розвиток цього проєкту та готовий поділитися деталями при подальших співпрацях.
+This website was successfully deployed within a short timeframe, and I continue to provide support and professional assistance. I take pride in my contribution to the development of this project and am ready to share details for further collaborations.
