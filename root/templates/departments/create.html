@@ -1,26 +1,31 @@
 {% extends '_layouts/base.html' %}
 
 {% block content %}
-    {% include '_fragments/Banner Area End.html' %}
+{% include '_fragments/Banner Area End.html' %}
 
-<div class="whole-wrap">
+<div class="whole-wrap  center-form">
     <div class="container">
         <div class="section-top-border">
             <div class="row">
                 <div class="col-lg-8 col-md-8">
-                    <h3 class="mb-30 title_color">Запис на прийом </h3>
-                        <form method="post">
-                            {% csrf_token %}
-                            {{ form.title }}<br>
-                            {{ form.about }}<br>
-                            {{ form.email }}<br>
-                            {{ form.phone }}<br>
-                            {{ form.message }}<br>
-                            <span style="color: red">{{ error }}</span>
-                            <input type="submit" value="Відправити" class='genric-btn success-border circle'>
-                            <input type="reset" value="Очистити" class='genric-btn danger-border circle'>
-                            <a class="genric-btn info-border circle" href="/about" role="button">До відгуків</a>
-                        </form>
+<!--                    <h3 class="mb-30 title_color">Запис на прийом </h3>-->
+                    <div class="iframe-container">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJy0d-1lAT9eKj8yRpqHj6ECkGWY6-Q5jZgtgDUCNuIPIYjg/viewform?embedded=true"
+                                width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Загрузка…
+                        </iframe>
+                        <!--                        <form method="post">-->
+                        <!--                            {% csrf_token %}-->
+                        <!--                            {{ form.title }}<br>-->
+                        <!--                            {{ form.about }}<br>-->
+                        <!--                            {{ form.email }}<br>-->
+                        <!--                            {{ form.phone }}<br>-->
+                        <!--                            {{ form.message }}<br>-->
+                        <!--                            <span style="color: red">{{ error }}</span>-->
+                        <!--                            <input type="submit" value="Відправити" class='genric-btn success-border circle'>-->
+                        <!--                            <input type="reset" value="Очистити" class='genric-btn danger-border circle'>-->
+                        <!--                            <a class="genric-btn info-border circle" href="/about" role="button">До відгуків</a>-->
+                        <!--                        </form>-->
+                    </div>
                 </div>
             </div>
         </div>
