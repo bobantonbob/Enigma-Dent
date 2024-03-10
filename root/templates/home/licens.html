@@ -1,0 +1,26 @@
+{% extends '_layouts/base.html' %}
+
+{% block content %}
+{% load static %}
+{% include '_fragments/Banner Area End.html' %}
+
+
+<section class="sample-text-area">
+    <div class="container par">
+        <h2 class="text-heading title_color">ЛІЦЕНЗІЯ</h2>
+        <h3 class="text-heading title_color">Заклад «Енігма - Дент» в місті Київ веде діяльність згідно поточним
+            ліцензії: <b
+                    style="color: #6ebccc;">№565760</b></h3>
+        <p class="sample-text">Дію ліцензій можна перевірити за <a href="https://usr.minjust.gov.ua/content/free-search"
+                                                                   target="_blank"><b
+                style="color: #6ebccc;">посиланням</b></a></p>
+        <dr>
+            <img src="{% static 'images/license.jpg' %}" alt="WhatsApp" class="img-fluid" style="max-width: 70%; height: auto;">
+
+    </div>
+
+
+</section>
+
+
+{% endblock content %}

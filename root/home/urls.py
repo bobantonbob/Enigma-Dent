@@ -9,5 +9,6 @@ urlpatterns = [
     path('privacy_policy', privacy_policy),
     path('your_view', your_view),
     path('public_contract', public_contract),
+    path('licens', licens),
 
 ]

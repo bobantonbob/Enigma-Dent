@@ -1,9 +1,8 @@
 from django.shortcuts import render, redirect
 from .forms import ResponseForm
 from .models import Response
-from django.contrib.auth import logout                  # блок користувача клас ХАКЕР
+from django.contrib.auth import logout  # блок користувача клас ХАКЕР
 from django.core.paginator import Paginator
-
 
 
 def index(request):
@@ -45,9 +44,9 @@ def feedback_site(request):
         return HttpResponse('Спасибі за ваш відгук!')
 
     return render(request, 'home/about.html', {
-            'title': "Відгук на сайт",
-            'page': 'contacts',
-            'app': 'about'
+        'title': "Відгук на сайт",
+        'page': 'contacts',
+        'app': 'about'
     })
 
 
@@ -68,7 +67,6 @@ def about(request):
         'rows_count': rows_count,
         'page_obj': page_obj,
     })
-
 
 
 def response_create(request):
@@ -97,6 +95,14 @@ def public_contract(request):
         'page': 'public_contract',
         'app': 'home'
     })
+
+def licens(request):
+    return render(request, 'home/licens.html', {
+        'title': 'Ліцензія',
+        'page': 'licens',
+        'app': 'home'
+    })
+
 
 
 def your_view(request):
