@@ -1,4 +1,4 @@
-# 🦷 Dental Clinic Website | *** 🏥
+# 🦷 Dental Clinic Website | enigma-dent.com.ua 🏥
 
 Within the framework of this project to develop a website for a dental clinic, a digital toolkit has been successfully created, enhancing convenient interaction with patients and improving staff efficiency. A wide range of features was implemented in just one week.
 
