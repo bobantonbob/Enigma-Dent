@@ -1,12 +1,61 @@
 {% extends '_layouts/base.html' %}
 
 {% block content %}
+{% load static %}
 {% include '_fragments/Banner Area Starts.html' %}
 
 
 {% include '_fragments/Department Area Starts.html' %}
 
-{% include '_fragments/Blog Categorie Area.html' %}
+<!--{% include '_fragments/Blog Categorie Area.html' %}-->
+
+    <section class="blog_categorie_area">
+        <div class="container">
+            <div class="row" >
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="categories_post">
+                        <a href="/departments/therapeutic"><img src="{%static 'images/blog/cat-post/cat-post-2.jpg' %}" alt="Терапевтична стоматологія"></a>
+                        <div class="categories_details">
+                            <div class="categories_text">
+                                <a href="/departments/therapeutic"><h3>Терапевтична<br> стоматологія</h3></a>
+                                <div class="border_line"></div>
+                                <a href="/departments/therapeutic"><p style="color: white;">стоматологічні послуги<br> &<br>ціни</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="categories_post">
+                        <a href="/departments/periodontology"><img src="{%static 'images/blog/cat-post/cat-post-3.jpg' %}" alt="Пародонтологічна стоматологія"></a>
+                        <div class="categories_details">
+                            <div class="categories_text">
+                                <a href="/departments/periodontology"><h3>Пародонтологічна <br> стоматологія</h3></a>
+                                <div class="border_line"></div>
+                                <a href="/departments/periodontology"><p style="color: white;">стоматологічні послуги<br> &<br>ціни</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="categories_post">
+                        <a href="/departments/orthopedic"><img src="{%static 'images/blog/cat-post/cat-post-1.jpg' %}" alt="Ортопедична стоматологія"></a>
+                        <div class="categories_details">
+                            <div class="categories_text">
+                                <a href="/departments/orthopedic"><h3>Ортопедична<br> стоматологія</h3></a>
+                                <div class="border_line"></div>
+                                <a href="/departments/orthopedic"><p style="color: white;">стоматологічні послуги<br> &<br>ціни</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
 {% include '_fragments/Feature Area Starts.html' %}
 {% include '_fragments/Specialist Area Starts.html' %}
 <!--    {% include '_fragments/Patient Area Starts.html' %}-->
